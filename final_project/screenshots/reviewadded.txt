@@ -1,0 +1,21 @@
+# Task 8 - Add / modify a book review
+
+## cURL command (add new review)
+```
+curl -s -b /tmp/cookies.txt -X PUT 'http://localhost:5000/customer/auth/review/1?review=An%20impactful%20novel%20on%20colonialism%20and%20culture.'
+```
+
+## Output
+```json
+{"message":"Review by 'shehab' added for ISBN 1.","reviews":{"shehab":"An impactful novel on colonialism and culture."}}
+```
+
+## cURL command (modify same user's review)
+```
+curl -s -b /tmp/cookies.txt -X PUT 'http://localhost:5000/customer/auth/review/1?review=Updated:%20A%20powerful%20and%20moving%20story.'
+```
+
+## Output
+```json
+{"message":"Review by 'shehab' updated for ISBN 1.","reviews":{"shehab":"Updated: A powerful and moving story."}}
+```

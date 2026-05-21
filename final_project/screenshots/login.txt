@@ -1,0 +1,11 @@
+# Task 7 - Login as registered user
+
+## cURL command
+```
+curl -s -c /tmp/cookies.txt -X POST http://localhost:5000/customer/login -H 'Content-Type: application/json' -d '{"username":"shehab","password":"securePass123"}'
+```
+
+## Output
+```json
+{"message":"User 'shehab' logged in successfully.","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoic2hlaGFiIiwiaWF0IjoxNzc5MzUyMzEzLCJleHAiOjE3NzkzNTU5MTN9.jqsM15hGV8x5JquyKSWlBElhXpwmTLoxfg88Z5deEpI"}
+```

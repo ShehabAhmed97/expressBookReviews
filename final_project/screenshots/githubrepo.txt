@@ -1,0 +1,26 @@
+# Task 11 - GitHub fork verification
+
+## Forked repository URL
+https://github.com/ShehabAhmed97/expressBookReviews
+
+## cURL command
+```
+curl -s https://api.github.com/repos/ShehabAhmed97/expressBookReviews
+```
+
+## Output (key fields - confirms fork: true and parent = ibm-developer-skills-network/expressBookReviews)
+```json
+{
+  "full_name": "ShehabAhmed97/expressBookReviews",
+  "fork": true,
+  "html_url": "https://github.com/ShehabAhmed97/expressBookReviews",
+  "parent": {
+    "full_name": "ibm-developer-skills-network/expressBookReviews",
+    "html_url": "https://github.com/ibm-developer-skills-network/expressBookReviews"
+  },
+  "source": {
+    "full_name": "ibm-developer-skills-network/expressBookReviews",
+    "html_url": "https://github.com/ibm-developer-skills-network/expressBookReviews"
+  }
+}
+```

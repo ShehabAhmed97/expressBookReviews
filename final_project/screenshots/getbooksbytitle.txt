@@ -1,0 +1,11 @@
+# Task 4 - Get books by title
+
+## cURL command
+```
+curl -s http://localhost:5000/title/Fairy%20tales
+```
+
+## Output
+```json
+[{"id":"2","author":"Hans Christian Andersen","title":"Fairy tales","reviews":{}}]
+```

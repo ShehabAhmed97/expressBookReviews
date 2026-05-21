@@ -1,0 +1,11 @@
+# Task 5 - Get book review
+
+## cURL command
+```
+curl -s http://localhost:5000/review/1
+```
+
+## Output
+```json
+{}
+```
